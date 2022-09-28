@@ -1,0 +1,43 @@
+SELECT * FROM Trip
+WHERE town_from = 'Moscow'
+
+SELECT name FROM Passenger
+WHERE name LIKE '%man%'
+
+SELECT COUNT(*) as count FROM Trip 
+WHERE plane = 'TU-134'
+
+SELECT DISTINCT name
+FROM Company JOIN Trip
+ON Company.id = Trip.company AND Trip.plane = 'Boeing'
+
+SELECT TIMEDIFF(time_in, time_out) 
+as flight_time, town_to 
+FROM Trip 
+WHERE town_from = 'Paris'
+
+SELECT *
+FROM Trip
+WHERE time_out BETWEEN '1900-01-01 10:00' 
+AND '1900-01-01 14:00:00'
+
+SELECT name FROM Passenger
+ORDER BY LENGTH(name) DESC LIMIT 1
+
+SELECT name FROM Passenger
+GROUP BY name
+HAVING COUNT(*) > 1
+
+SELECT town_to FROM Trip 
+JOIN Pass_in_trip
+ON Trip.id = Pass_in_trip.trip
+JOIN Passenger
+ON Passenger.name = 'Bruce Willis' AND 
+Passenger.id = Pass_in_trip.passenger
+
+SELECT name, COUNT(*) as count FROM
+Passenger JOIN Pass_in_trip
+ON Passenger.id = Pass_in_trip.passenger
+GROUP BY name
+HAVING COUNT >= 1
+ORDER BY COUNT DESC, name ASC
