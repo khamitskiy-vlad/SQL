@@ -1,0 +1,42 @@
+Company	
+id	name
+1		Don_avia
+2		Aeroflot
+3		Dale_avia
+4		air_France
+5		British_AW
+
+Passenger	
+id	name
+1		Bruce Willis
+2		George Clooney
+3		Kevin Costner
+4		Donald Sutherland
+5		Jennifer Lopez
+6		Ray Liotta
+7		Samuel L. Jackson
+8		Nikole Kidman
+9		Alan Rickman
+10	Kurt Russell
+11	Harrison Ford
+12	Russell Crowe
+13	Steve Martin
+14	Michael Caine
+15	Angelina Jolie
+16	Mel Gibson
+17	Michael Douglas
+18	John Travolta
+19	Sylvester Stallone
+20	Tommy Lee Jones
+21	Catherine Zeta-Jones
+22	Antonio Banderas
+23	Kim Basinger
+24	Sam Neill
+25	Gary Oldman
+26	ClINT Eastwood
+27	Brad Pitt
+28	Johnny Depp
+29	Pierce Brosnan
+30	Sean Connery
+31	Bruce Willis
+37	Mullah Omar
